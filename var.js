@@ -3,22 +3,20 @@
         {
             Id: "1",
             LinkImageSP: "img/AbsolutRaspberri_thumb.jpg",
-            NameSP: "Vodka Absolut Raspberri",
+            NameSP: "Vodka Absolut",
             SaleSP: 300000,
             money: 310000,
             Category: "Rượu Thụy Điển",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Thụy Điển"]
         },
 
         {
             Id: "2",
             LinkImageSP: "img/antoine grenache cabernet sauvignon.jpg",
-            NameSP: "Antoine Grenache Cabernet Sauvignon",
+            NameSP: "Antoine Grenache ",
             SaleSP: 160000,
             money: 170000,
             Category: "Rượu Pháp",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Pháp"]
         },
 
@@ -29,7 +27,6 @@
             SaleSP: 160000,
             money: 170000,
             Category: "Rượu Pháp",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Pháp"]
         },
 
@@ -40,7 +37,6 @@
             SaleSP: 160000,
             money: 170000,
             Category: "Rượu Pháp",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Pháp"]
         },
 
@@ -51,7 +47,6 @@
             SaleSP: 550000,
             money: 600000,
             Category: "Rượu Scotland",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Scotland"]
         },
 
@@ -62,7 +57,6 @@
             SaleSP: 2700000,
             money: 2900000,
             Category: "Rượu Pháp",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Pháp"]
         },
 
@@ -73,51 +67,46 @@
             SaleSP: 500000,
             money: 520000,
             Category: "Rượu Pháp ",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Pháp"]
         },
 
         {
             Id: "8",
             LinkImageSP: "img/CONDO CABERNET SAUVIGNON SWAN REACH 2013.jpg",
-            NameSP: "Condo Cabernet Sauvignon Swan Reach 2013",
+            NameSP: "Condo Cabernet ",
             SaleSP: 750000,
             money: 770000,
             Category: "Rượu Úc",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Úc"]
         },
 
         {
             Id: "9",
             LinkImageSP: "img/CONDO CHARDONNAY SWAN REACH 2015.jpg",
-            NameSP: "Condo Chardonnay Swan Reach 2015",
+            NameSP: "Condo Chardonnay ",
             SaleSP: 750000,
             money: 770000,
             Category: "Rượu Úc",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Úc"]
         },
 
         {
             Id: "10",
             LinkImageSP: "img/CONDO SHIRAZ SWAN REACH 2013.jpg",
-            NameSP: "Condo Shiraz Swan Reach 2013",
+            NameSP: "Condo Shiraz",
             SaleSP: 750000,
             money: 770000,
             Category: "Rượu Úc",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Úc"]
         },
 
         {
             Id: "11",
             LinkImageSP: "img/CORPALO GRAN RESERVA, SHIRAZ-MERLOT.jpg",
-            NameSP: "Corpalo Gran reserva, Shiraz-Merlot",
+            NameSP: "Corpalo Gran reserva",
             SaleSP: 650000,
             money: 680000,
             Category: "Rượu Chile",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Chile"]
         },
 
@@ -128,7 +117,6 @@
             SaleSP: 400000,
             money: 410000,
             Category: "Rượu Đức",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Đức"]
         },
 
@@ -139,7 +127,6 @@
             SaleSP: 580000,
             money: 600000,
             Category: "Rượu Pháp",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Pháp"]
         },
 
@@ -150,18 +137,16 @@
             SaleSP: 150000,
             money: 160000,
             Category: "Rượu Pháp",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Pháp"]
         },
 
         {
             Id: "15",
             LinkImageSP: "img/MAPOLA GRAN RESERVA , CARBERNET SAUVIGNON-MERLOT.jpg",
-            NameSP: "Mapola Gran reserva , Carbernet Sauvignon-merlot",
+            NameSP: "Mapola Gran reserva",
             SaleSP: 700000,
             money: 730000,
             Category: "Rượu Chile",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Chile"]
         },
 
@@ -172,7 +157,6 @@
             SaleSP: 100000,
             money: 105000,
             Category: "Rượu Australian",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Australian"]
         },
 
@@ -183,18 +167,16 @@
             SaleSP: 650000,
             money: 680000,
             Category: "Rượu Chile",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Chile"]
         },
 
         {
             Id: "18",
             LinkImageSP: "img/RAP SPECIAL RESERVA , CAMERNERE.jpg",
-            NameSP: "Rap Special Reserva , Camernere",
+            NameSP: "Rap Special Reserva",
             SaleSP: 350000,
             money: 390000,
             Category: "Rượu Chile",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Chile"]
         },
 
@@ -205,7 +187,6 @@
             SaleSP: 1100000,
             money:  1150000,
             Category: "Rượu Scotland",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Scotland"]
         },
 
@@ -216,7 +197,6 @@
             SaleSP: 140000,
             money: 155000,
             Category: "Rượu Pháp",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Pháp"]
         },
 
@@ -227,7 +207,6 @@
             SaleSP: 1050000,
             money: 1100000,
             Category: "Rượu Pháp",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Pháp"]
         },
 
@@ -238,7 +217,6 @@
             SaleSP: 100000,
             money: 120000,
             Category: "Rượu Nga",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Nga"]
         },
 
@@ -249,18 +227,16 @@
             SaleSP: 700000,
             money: 780000,
             Category: "Rượu Chile",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Chile"]
         },
 
         {
             Id: "24",
             LinkImageSP: "img/Viento del Sursyrah cabernet sauvignon.jpg",
-            NameSP: "Viento del Sursyrah cabernet sauvignon",
+            NameSP: "Viento del Sursyrah",
             SaleSP: 850000,
             money: 1000000,
             Category: "Rượu Chile",
-            LuotMua: 0,
             Tag: ["Rượu", "Rượu Chile"]
         }
     ];

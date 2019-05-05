@@ -1,6 +1,11 @@
 .w-100{width:100%!important}
 .form-text{display:block;margin-top:.25rem}
 .mb-3,.my-3{margin-bottom:1rem!important}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .floatleft { float: left }
 .floatright { float: right }
 .alignleft {
