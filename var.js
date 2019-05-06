@@ -13,7 +13,7 @@
         {
             Id: "2",
             LinkImageSP: "img/antoine grenache cabernet sauvignon.jpg",
-            NameSP: "Antoine Grenache ",
+            NameSP: "Antoine Grenache",
             SaleSP: 160000,
             money: 170000,
             Category: "Rượu Pháp",
@@ -122,7 +122,7 @@
 
         {
             Id: "13",
-            LinkImageSP: "img/louis iii xo.jpg",
+            LinkImageSP: "img/louis iii xo.png",
             NameSP: "Louis III XO",
             SaleSP: 580000,
             money: 600000,
