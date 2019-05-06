@@ -33,6 +33,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="var.js">console.log(product.length)</script>
+  <script>
+    var pram = new URLSearchParams(window.location.search).get('id') || "";
+    var LoadSP;
+    if (pram == "") LoadSP = 1;
+    else LoadSP = data.findIndex(item => item.Id == pram);
+  </script>
   </head>
   <body>
    
@@ -125,47 +132,59 @@
                     
                     <div class="single-sidebar">
                         <h2 class="sidebar-title">Sản Phẩm</h2>
-                        <div class="thubmnail-recent">
-                            <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
-                            <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
-                            </div>                             
-                        </div>
-                        <div class="thubmnail-recent">
-                            <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
-                            <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
-                            </div>                             
-                        </div>
-                        <div class="thubmnail-recent">
-                            <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
-                            <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
-                            </div>                             
-                        </div>
-                        <div class="thubmnail-recent">
-                            <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
-                            <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
-                            </div>                             
+                        <div id="SPAS">
+                            <script type="text/javascript">
+                            var txt = "";
+
+                            var n = data.length - 6;
+                            for (var i = n; i >= n - 3 && i >= 0; i--)
+                                txt +=`<div class="thubmnail-recent">
+                                        <img src="${data[i].LinkImageSP}" class="recent-thumb" alt="">
+                                        <h2><a href="single-product.html?id=${data[i].Id}">${data[i].NameSP}</a></h2>
+                                        <div class="product-sidebar-price">
+                                          <ins>${data[i].SaleSP}<sup>d</sup></ins>
+                                          <del>${data[i].money}<sup>d</sup></del>
+                                        </div>
+                                      </div>`;
+                            document.getElementById("SPAS").innerHTML = txt;
+                            </script>
                         </div>
                     </div>
                     
                     <div class="single-sidebar">
-                        <h2 class="sidebar-title">Sản phẩm mới</h2>
-                        <ul>
-                            <li><a href="#">Sony Smart TV - 2015</a></li>
-                            <li><a href="#">Sony Smart TV - 2015</a></li>
-                            <li><a href="#">Sony Smart TV - 2015</a></li>
-                            <li><a href="#">Sony Smart TV - 2015</a></li>
-                            <li><a href="#">Sony Smart TV - 2015</a></li>
-                        </ul>
+                        <h2 class="sidebar-title">Sản Phẩm mới</h2>
+                        <div id="SPNew">
+                            <script type="text/javascript">
+                            var txt = "";
+
+                            var n = data.length - 1;
+                            for (var i = n; i >= n - 3 && i >= 0; i--)
+                                txt +=`<div class="thubmnail-recent">
+                                        <img src="${data[i].LinkImageSP}" class="recent-thumb" alt="">
+                                        <h2><a href="single-product.html?id=${data[i].Id}">${data[i].NameSP}</a></h2>
+                                        <div class="product-sidebar-price">
+                                          <ins>${data[i].SaleSP}<sup>d</sup></ins>
+                                          <del>${data[i].money}<sup>d</sup></del>
+                                        </div>
+                                      </div>`;
+                            document.getElementById("SPNew").innerHTML = txt;
+                            </script>
+                        </div>
                     </div>
                 </div>
+                
+                
+                <div class="col-md-8">
+                    <div class="product-content-right">
+                        <div class="product-breadcroumb">
+                            <a href="">Trang chủ</a>
+                            <a href="javascript:document.location.href = `shop.html?category=${data[LoadSP].Category}`">
+                                <script>document.write(data[LoadSP].Category);</script>
+                              </a>
+                            <a href="">
+                            <script>document.write(data[LoadSP].NameSP);</script>
+                        </a>
+                        </div>
                 
                 <div class="col-md-8">
                     <div class="product-content-right">
@@ -183,23 +202,33 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="cart_item">
-                                            <td class="product-remove">
-                                                <a title="Remove this item" class="remove" href="#">×</a> 
-                                            </td>
+                                            <tr class="cart_item">
+                                                <td class="product-remove">
+                                                    <a title="Remove this item" class="remove" href="#">×</a> 
+                                                </td>
+                                            <div id="product-bought">
+                                            <script>
+                                                var tmp="";
+                                                for(var i=0;i<products.length;i++){
+                                                    tmp+=`
+                                                    <td class="product-thumbnail">
+                                                        <div id="sp1">
+                                                            <img src="${products[0].LinkImageSP}">
+                                                        </div>
+                                                    </td>
 
-                                            <td class="product-thumbnail">
-                                                <a href="single-product.html"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/product-thumb-2.jpg"></a>
-                                            </td>
+                                                    <td class="product-name">
+                                                            <a href="single-product.html?">Chi ti?t s?n ph?m</a>
+                                                    </td>
 
-                                            <td class="product-name">
-                                                <a href="single-product.html">Chi tiết sản phẩm</a> 
-                                            </td>
-
-                                            <td class="product-price">
-                                                <span class="amount">£15.00</span> 
-                                            </td>
-
+                                                    <td class="product-price">
+                                                        <span class="amount">${products[1].SaleSP}</span> 
+                                                    </td>`
+                                                }
+                                                document.getElementById("product-bought").innerHTML=tmp;
+                                                console.log(i);
+                                                </script>
+                                        </div>
                                             <td class="product-quantity">
                                                 <div class="quantity buttons_added">
                                                     <input type="button" class="minus" value="-">
@@ -234,23 +263,36 @@
                                 <h2>Thêm Sản Phẩm</h2>
                                 <ul class="Sản Phẩm">   
                                     <li class="product">
-                                        <a href="single-product.html">
-                                            <img width="325" height="325" alt="T_4_front" class="attachment-shop_catalog wp-post-image" src="img/product-2.jpg">
-                                            <h3>Chi tiết sản phẩm</h3>
-                                            <span class="price"><span class="amount">£20.00</span></span>
-                                        </a>
-
-                                        <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="22" rel="nofollow" href="single-product.html">Thêm vào giỏ hàng</a>
+                                            <div id="product_1">
+                                                    <script>
+                                                        console.log(products[0]);
+                                                        var tmp = `<div class="more_product">
+                                                            <img src="${data[LoadSP+5].LinkImageSP}">
+                                                            <h2><a href="single-product.html?id=${data[LoadSP+5].Id}">Chi ti?t s?n ph?m</a></h2>
+                                                            <div class="product2-price">
+                                                                <ins>${data[LoadSP+5].SaleSP}<sup>d</sup></ins>
+                                                                <del>${data[LoadSP+5].money}<sup>d</sup></del>
+                                                            </div>`
+                                                            document.getElementById("product_1").innerHTML=tmp;
+                                                    </script>
+                                                <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="22" rel="nofollow" href="single-product.html">Thêm vào giỏ hàng</a>
+                                                </div>
                                     </li>
 
                                     <li class="product">
-                                        <a href="single-product.html">
-                                            <img width="325" height="325" alt="T_4_front" class="attachment-shop_catalog wp-post-image" src="img/product-4.jpg">
-                                            <h3>Chi tiết sản phẩm</h3>
-                                            <span class="price"><span class="amount">£20.00</span></span>
-                                        </a>
-
+                                        <div id="product_2">
+                                            <script>
+                                                var tmp = `<div class="more_product">
+                                                    <img src="${data[LoadSP+3].LinkImageSP}">
+                                                    <h2><a href="single-product.html?id=${data[LoadSP+3].Id}">Chi ti?t s?n ph?m</a></h2>
+                                                    <div class="product2-price">
+                                                    <ins>${data[LoadSP+3].SaleSP}<sup>d</sup></ins>
+                                                    <del>${data[LoadSP+3].money}<sup>d</sup></del>
+                                                    </div>`
+                                                    document.getElementById("product_2").innerHTML=tmp;
+                                            </script>
                                         <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="22" rel="nofollow" href="single-product.html">Thêm vào giỏ hàng</a>
+                                    </div>
                                     </li>
                                 </ul>
                             </div>
@@ -268,7 +310,7 @@
 
                                         <tr class="shipping">
                                             <th>Chi phí vận chuyển</th>
-                                            <td>Miển phí vận chuyển</td>
+                                            <td>Miễn phí vận chuyển</td>
                                         </tr>
 
                                         <tr class="order-total">
